@@ -3,13 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC1 : NPCbase
-{
-    private void Update()
-    {
-        moodStatusCheck();
-        if (moodLevel <= -20) //Die();
-            canCommunicate = false;
-    }
+{//小女孩，特殊之处在于心情坏了之后就不想与你交流,高兴了就会给你道具1
     private void OnTriggerStay(Collider other)
     {
         checkPlayerWantToCommunicate();
@@ -20,31 +14,17 @@ public class NPC1 : NPCbase
         refuseUI.SetActive(false);
     }
 
-    public void doChose1()
-    {
-        moodLevel += -5;
-        Debug.Log(moodLevel);
-    }
-    public void doChose2()
-    {
-        moodLevel += 0;
-        Debug.Log(moodLevel);
-    }
-    public void doChose3()
-    {
-        moodLevel += 5;
-        Debug.Log(moodLevel);
-    }
     public override void badMood()
     {
-        Debug.Log("对方现在很生气");
+        //Debug.Log("对方现在很生气");
         canCommunicate = false;
     }
     
     public override void goodMood()
     {
-        Debug.Log("对方现在很开心");
-        canCommunicate = true;
+        //Debug.Log("对方现在很开心");
+        giveKey = true;
+        //canCommunicate = true;
         //player.isGetItem1 = true;
     }
 }

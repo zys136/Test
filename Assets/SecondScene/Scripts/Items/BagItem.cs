@@ -9,12 +9,6 @@ public class BagItem : ItemInfoBase
     public GameObject Item2;
     public GameObject Item3;
 
-    void Update()
-    {
-        check_Item1();
-        check_Item2();
-        check_Item3();
-    }
     public void check_Item1()
     {
         if (player.isGetItem1) Item1.SetActive(true);

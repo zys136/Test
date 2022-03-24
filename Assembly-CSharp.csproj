@@ -61,16 +61,15 @@
     <Compile Include="Assets\SecondScene\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\FirstScene\Scripts\PageScrollView\PageScrollView.cs" />
     <Compile Include="Assets\SecondScene\Scripts\Player\ThirdPersonController.cs" />
+    <Compile Include="Assets\SecondScene\Scripts\Items\ItemController.cs" />
     <Compile Include="Assets\FirstScene\Scripts\bag\Article.cs" />
     <Compile Include="Assets\SecondScene\Scripts\NPC\NPC1.cs" />
     <Compile Include="Assets\FirstScene\Scripts\bag\BagGrid.cs" />
     <Compile Include="Assets\SecondScene\Scripts\Items\BagItem.cs" />
     <Compile Include="Assets\FirstScene\Scripts\LookCamera.cs" />
     <Compile Include="Assets\FirstScene\Suriyun\Scripts\AnimatorController.cs" />
-    <Compile Include="Assets\SecondScene\Scripts\Items\GetItem3.cs" />
     <Compile Include="Assets\FirstScene\Scripts\View\ViewBase.cs" />
     <Compile Include="Assets\SecondScene\Scripts\Sword.cs" />
-    <Compile Include="Assets\SecondScene\Scripts\Items\GetItem1.cs" />
     <Compile Include="Assets\SecondScene\Scripts\NPC\NPC2.cs" />
     <Compile Include="Assets\SecondScene\Scripts\NPC\NPCcontroller.cs" />
     <Compile Include="Assets\FirstScene\Scripts\bag\UIDrag.cs" />
@@ -80,12 +79,13 @@
     <Compile Include="Assets\MainSecene\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\SecondScene\Scripts\NPC\NPC3.cs" />
     <Compile Include="Assets\FirstScene\Scripts\View\BagPanel.cs" />
-    <Compile Include="Assets\SecondScene\Scripts\Items\GetItem2.cs" />
+    <Compile Include="Assets\SecondScene\Scripts\GameManager\Gamemanager.cs" />
     <Compile Include="Assets\FirstScene\Scripts\View\MenuPanel.cs" />
     <Compile Include="Assets\FirstScene\Scripts\View\ArticleInfomation.cs" />
     <Compile Include="Assets\FirstScene\Scripts\bag\ArticleItem.cs" />
-    <Compile Include="Assets\SecondScene\Scripts\Items\ItemController.cs" />
-    <Compile Include="Assets\SecondScene\Scripts\GameManager\Gamemanager.cs" />
+    <Compile Include="Assets\SecondScene\Scripts\System\GameSystemInterfaces.cs" />
+    <Compile Include="Assets\SecondScene\Scripts\System\GameSystem.cs" />
+    <Compile Include="Assets\SecondScene\Scripts\Items\MissionItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FirstScene\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />

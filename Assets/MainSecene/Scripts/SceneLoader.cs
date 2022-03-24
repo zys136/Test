@@ -8,16 +8,18 @@ using System;
 public class SceneLoader : MonoBehaviour
 {
     public GameObject eventObj;
-    public Button btn1;
+    public GameObject infoText;
+    public GameObject numText;
+    //public Button btn1;
     public Button btn2;
-    //public Button btn3;
     public Animator animator;
     void Start()
     {
         GameObject.DontDestroyOnLoad(this.gameObject);
         GameObject.DontDestroyOnLoad(this.eventObj);
-
-        btn1.onClick.AddListener(LoadScene1);
+        GameObject.DontDestroyOnLoad(this.numText);
+        GameObject.DontDestroyOnLoad(this.infoText);
+        //btn1.onClick.AddListener(LoadScene1);
         btn2.onClick.AddListener(LoadScene2);
        // btn3.onClick.AddListener(LoadScene3);
     }
@@ -46,6 +48,7 @@ public class SceneLoader : MonoBehaviour
 
     private void OnloadScene(AsyncOperation obj)
     {
+
         animator.SetBool("FadeIn", false);
         animator.SetBool("FadeOut", true);
     }
